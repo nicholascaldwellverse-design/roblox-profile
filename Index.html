@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Ben - Roblox Profile</title>
+
 
     <style>
 
@@ -14,49 +21,78 @@
             box-sizing: border-box;
         }
 
+
         body {
             font-family: Arial, Helvetica, sans-serif;
+
             background: #0b0d10;
+
             color: white;
+
             min-height: 100vh;
         }
 
-        /* NAVIGATION */
+
+        /* =========================
+           NAVBAR
+        ========================= */
 
         .navbar {
+
             height: 65px;
+
             background: #181a1f;
+
             border-bottom: 1px solid #2b2f36;
 
             display: flex;
+
             align-items: center;
+
             justify-content: space-between;
 
             padding: 0 25px;
         }
 
+
         .logo {
+
             font-size: 23px;
+
             font-weight: 800;
+
             letter-spacing: 1px;
         }
 
+
         .nav-text {
+
             color: #9da3ad;
+
             font-size: 14px;
         }
 
-        /* MAIN */
+
+        /* =========================
+           MAIN
+        ========================= */
 
         .container {
+
             width: 92%;
+
             max-width: 950px;
+
             margin: 40px auto;
         }
 
-        /* PROFILE */
+
+        /* =========================
+           PROFILE
+        ========================= */
 
         .profile {
+
             background:
                 linear-gradient(
                     135deg,
@@ -65,11 +101,13 @@
                 );
 
             border: 1px solid #30353d;
+
             border-radius: 18px;
 
             padding: 35px;
 
             display: flex;
+
             align-items: center;
 
             gap: 30px;
@@ -78,10 +116,15 @@
                 0 15px 40px rgba(0,0,0,0.4);
         }
 
-        /* AVATAR */
+
+        /* =========================
+           AVATAR
+        ========================= */
 
         .avatar {
+
             width: 170px;
+
             height: 170px;
 
             border-radius: 50%;
@@ -96,30 +139,45 @@
                 0 10px 30px rgba(0,0,0,0.6);
         }
 
-        /* PROFILE INFORMATION */
+
+        /* =========================
+           INFORMATION
+        ========================= */
 
         .information {
+
             flex: 1;
         }
 
+
         .display-name {
+
             font-size: 38px;
+
             font-weight: 800;
 
             margin-bottom: 5px;
         }
 
+
         .username {
+
             color: #969da8;
+
             font-size: 16px;
 
             margin-bottom: 15px;
         }
 
-        /* ONLINE */
+
+        /* =========================
+           ONLINE
+        ========================= */
 
         .online {
+
             display: flex;
+
             align-items: center;
 
             gap: 8px;
@@ -127,13 +185,17 @@
             color: #4ade80;
 
             font-weight: bold;
+
             font-size: 14px;
 
             margin-bottom: 18px;
         }
 
+
         .online-dot {
+
             width: 9px;
+
             height: 9px;
 
             background: #4ade80;
@@ -144,9 +206,13 @@
                 0 0 10px #4ade80;
         }
 
-        /* BIO */
+
+        /* =========================
+           BIO
+        ========================= */
 
         .bio {
+
             color: #c3c8d0;
 
             line-height: 1.6;
@@ -156,9 +222,13 @@
             margin-bottom: 22px;
         }
 
-        /* BUTTONS */
+
+        /* =========================
+           BUTTONS
+        ========================= */
 
         .buttons {
+
             display: flex;
 
             gap: 12px;
@@ -166,7 +236,9 @@
             flex-wrap: wrap;
         }
 
+
         .button {
+
             display: inline-block;
 
             padding: 13px 20px;
@@ -182,18 +254,31 @@
             transition: 0.2s;
         }
 
+
+        /* JOIN BUTTON */
+
         .join {
+
             background: #00a2ff;
+
             color: white;
+
+            cursor: pointer;
         }
 
+
         .join:hover {
+
             background: #008edb;
 
             transform: translateY(-2px);
         }
 
+
+        /* PROFILE BUTTON */
+
         .profile-button {
+
             background: #292e35;
 
             color: white;
@@ -201,15 +286,21 @@
             border: 1px solid #3c434c;
         }
 
+
         .profile-button:hover {
+
             background: #353b44;
 
             transform: translateY(-2px);
         }
 
-        /* STATS */
+
+        /* =========================
+           STATS
+        ========================= */
 
         .stats {
+
             display: grid;
 
             grid-template-columns:
@@ -220,7 +311,9 @@
             margin-top: 20px;
         }
 
+
         .stat {
+
             background: #181b20;
 
             border: 1px solid #2b3037;
@@ -234,13 +327,17 @@
             transition: 0.2s;
         }
 
+
         .stat:hover {
+
             transform: translateY(-3px);
 
             border-color: #444b55;
         }
 
+
         .number {
+
             font-size: 22px;
 
             font-weight: bold;
@@ -248,15 +345,21 @@
             margin-bottom: 5px;
         }
 
+
         .label {
+
             color: #8f97a3;
 
             font-size: 13px;
         }
 
-        /* LOWER CARDS */
+
+        /* =========================
+           LOWER CARDS
+        ========================= */
 
         .cards {
+
             display: grid;
 
             grid-template-columns:
@@ -267,7 +370,9 @@
             margin-top: 20px;
         }
 
+
         .card {
+
             background: #181b20;
 
             border: 1px solid #2b3037;
@@ -277,21 +382,29 @@
             padding: 25px;
         }
 
+
         .card h2 {
+
             font-size: 19px;
 
             margin-bottom: 15px;
         }
 
+
         .card p {
+
             color: #aeb5bf;
 
             line-height: 1.6;
         }
 
-        /* GAME */
+
+        /* =========================
+           GAME
+        ========================= */
 
         .game {
+
             display: flex;
 
             align-items: center;
@@ -299,8 +412,11 @@
             gap: 15px;
         }
 
+
         .game-image {
+
             width: 85px;
+
             height: 85px;
 
             border-radius: 10px;
@@ -310,7 +426,9 @@
             background: #292e35;
         }
 
+
         .game-name {
+
             font-size: 17px;
 
             font-weight: bold;
@@ -318,15 +436,21 @@
             margin-bottom: 6px;
         }
 
+
         .game-type {
+
             color: #8f97a3;
 
             font-size: 13px;
         }
 
-        /* FOOTER */
+
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
+
             text-align: center;
 
             color: #626a74;
@@ -336,21 +460,29 @@
             padding: 35px 10px;
         }
 
-        /* PHONE */
+
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 700px) {
 
             .navbar {
+
                 padding: 0 15px;
             }
 
+
             .container {
+
                 width: 94%;
 
                 margin: 25px auto;
             }
 
+
             .profile {
+
                 flex-direction: column;
 
                 text-align: center;
@@ -358,40 +490,58 @@
                 padding: 25px;
             }
 
+
             .avatar {
+
                 width: 150px;
+
                 height: 150px;
             }
 
+
             .display-name {
+
                 font-size: 30px;
             }
 
+
             .online {
+
                 justify-content: center;
             }
+
 
             .buttons {
+
                 justify-content: center;
             }
 
+
             .stats {
+
                 grid-template-columns:
                     repeat(2, 1fr);
             }
 
+
             .cards {
+
                 grid-template-columns: 1fr;
             }
+
         }
 
     </style>
+
 </head>
+
 
 <body>
 
 
-    <!-- NAVBAR -->
+    <!-- =========================
+         NAVBAR
+    ========================= -->
 
     <nav class="navbar">
 
@@ -406,9 +556,16 @@
     </nav>
 
 
-    <!-- PROFILE -->
+    <!-- =========================
+         MAIN
+    ========================= -->
 
     <main class="container">
+
+
+        <!-- =========================
+             PROFILE
+        ========================= -->
 
         <section class="profile">
 
@@ -432,14 +589,14 @@
                 </h1>
 
 
-                <!-- REAL USERNAME -->
+                <!-- USERNAME -->
 
                 <div class="username">
                     @misfitsbsthree
                 </div>
 
 
-                <!-- ONLINE STATUS -->
+                <!-- STATUS -->
 
                 <div class="online">
 
@@ -455,11 +612,12 @@
                 <p class="bio">
 
                     Welcome to my Roblox profile!
+
                     I'm Ben, also known as
                     misfitsbsthree.
 
                     Check out my Roblox profile
-                    and join my game!
+                    and play Steal an Egg!
 
                 </p>
 
@@ -469,14 +627,11 @@
                 <div class="buttons">
 
 
-                    <!-- JOIN BUTTON -->
-
-                    <!-- CHANGE THIS LINK TO YOUR GAME -->
+                    <!-- JOIN GAME -->
 
                     <a
                         class="button join"
-                        href="https://roblox.com.bz/users/1351392825/profile"
-                        target="_blank"
+                        href="#game"
                     >
                         🎮 JOIN GAME
                     </a>
@@ -486,11 +641,12 @@
 
                     <a
                         class="button profile-button"
-                        href="https://www.roblox.com/users/profile?username=misfitsbsthree"
+                        href="https://roblox.com.bz/users/1351392825/profile"
                         target="_blank"
                     >
                         👤 ROBLOX PROFILE
                     </a>
+
 
                 </div>
 
@@ -499,15 +655,19 @@
         </section>
 
 
-        <!-- STATS -->
+        <!-- =========================
+             STATS
+        ========================= -->
 
         <section class="stats">
 
 
+            <!-- FRIENDS -->
+
             <div class="stat">
 
                 <div class="number">
-                    0
+                    6
                 </div>
 
                 <div class="label">
@@ -517,10 +677,12 @@
             </div>
 
 
+            <!-- FOLLOWERS -->
+
             <div class="stat">
 
                 <div class="number">
-                    0
+                    138.5K
                 </div>
 
                 <div class="label">
@@ -529,6 +691,8 @@
 
             </div>
 
+
+            <!-- FOLLOWING -->
 
             <div class="stat">
 
@@ -542,6 +706,8 @@
 
             </div>
 
+
+            <!-- PLAYER -->
 
             <div class="stat">
 
@@ -559,12 +725,14 @@
         </section>
 
 
-        <!-- LOWER INFORMATION -->
+        <!-- =========================
+             LOWER CARDS
+        ========================= -->
 
         <section class="cards">
 
 
-            <!-- ABOUT -->
+            <!-- ABOUT ME -->
 
             <div class="card">
 
@@ -581,18 +749,24 @@
 
                     Welcome to my profile website!
 
+                    Thanks for visiting! ❤️
+
                 </p>
 
             </div>
 
 
-            <!-- GAME -->
+            <!-- MY GAME -->
 
-            <div class="card">
+            <div
+                class="card"
+                id="game"
+            >
 
                 <h2>
                     🎮 My Game
                 </h2>
+
 
                 <div class="game">
 
@@ -602,14 +776,14 @@
                     <img
                         class="game-image"
                         src="avatar.jpg"
-                        alt="My Roblox Game"
+                        alt="Steal an Egg"
                     >
 
 
                     <div>
 
                         <div class="game-name">
-                            My Roblox Game
+                            Steal an Egg
                         </div>
 
                         <div class="game-type">
@@ -638,4 +812,5 @@
 
 
 </body>
-  </html>
+
+</html>
